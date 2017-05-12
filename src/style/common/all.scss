@@ -1,0 +1,60 @@
+html,body{
+    height: 100%;
+    width: 100%;    
+}
+html{
+    font-size: 16px;     
+}
+body{	
+    line-height: 1.42;    
+    -webkit-font-smoothing: antialiased;
+    position: relative;    
+    font-family: Open Sans; 
+    font-weight: 400;  
+}
+*{
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+    outline: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    overflow: hidden;   
+    width: 100%;
+    min-height: 100%; 
+    background-color: white;
+    &:after{
+        content: "";
+        display: block;
+        height: 180px;
+    }   
+}
+.container{
+    margin: 0 auto;
+    width: 960px;    
+    display: flex;
+    @include laptop{
+        width: 760px;
+    }
+    @include tablet{
+        width: 480px;
+    }
+    @include phones{
+        width: 95%;
+    }
+}
+.base-title{    
+    font-family: "FiraSansMedium";
+    font-size: 32px;    
+    line-height: 1.5;
+    @include phones{
+        font-size: 24px;
+    }   
+}
+.btn{
+  
+}
