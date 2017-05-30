@@ -24,14 +24,13 @@ ul {
 }
 .wrapper{
     overflow: hidden;   
-    width: 100%;
-    min-height: 100%; 
-    background-color: white;
-    &:after{
-        content: "";
-        display: block;
-        height: 180px;
-    }   
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: white;    
+}
+.main-content{  
+  flex: 1;
 }
 .container{
     margin: 0 auto;
