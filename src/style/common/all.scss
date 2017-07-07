@@ -25,12 +25,12 @@ ul {
 .wrapper{
     overflow: hidden;   
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
     flex-direction: column;
     background-color: white;    
 }
 .main-content{  
-  flex: 1;
+  flex: 1 0 auto;
 }
 .container{
     margin: 0 auto;
