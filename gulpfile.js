@@ -19,7 +19,9 @@ global.$ = {
           'gulp-rev-all': 'revAll',
           'gulp-rev-replace' : 'revReplace'
       }
-  })
+  }),
+  source: require('vinyl-source-stream'),
+  browserify: require('browserify')
 };
 
 $.path.task.forEach(function(taskPath) {
